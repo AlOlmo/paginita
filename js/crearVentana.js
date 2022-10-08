@@ -36,8 +36,8 @@ function crearNuevaVentana(id){
 		case idej2:
 		  ventana = window.open('rElementosVentana.html');
 		  break;
-		case valorN:
-		  //Declaraciones ejecutadas cuando el resultado de expresión coincide con valorN
+		case idej3:
+		  ventana = window.open('redondeo.html');
 		  break;
 		default:
 		  //Declaraciones ejecutadas cuando ninguno de los valores coincide con el valor de la expresión
