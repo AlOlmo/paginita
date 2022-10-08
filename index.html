@@ -1,0 +1,109 @@
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+	<title>Crear elemento HTML</title>
+	<style>
+		#pago {
+			font-family: Verdana, Arial, sans-serif;
+			margin: auto;
+			background: SlateGray;
+			color: white;
+			font-size: 14px;
+			padding: 30px;
+			width: 450px;
+			border: solid 10px LightSteelBlue;
+			border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+		}
+
+		#pago input {
+			font-size: 14px;
+			background: white;
+			border: solid 1px LightSteelBlue;
+			border-radius: 3px;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			float: right;
+			margin-right: 15px;
+			width: 200px;
+		}
+
+		#pago ol li {
+			line-height: 25px;
+			list-style: none;
+		}
+
+		#pago [required] {
+			border: solid 1px red;
+		}
+
+		input:required {
+			outline: 1px solid red;
+		}
+
+		button {
+			text-align: center;
+		}
+
+		fieldset {
+			text-align: center;
+		}
+
+		#parrafoAyuda {
+
+			font-family: Verdana, Arial, sans-serif;
+			margin: auto;
+			background: SlateGray;
+			color: white;
+			font-size: 14px;
+			padding: 30px;
+			width: 450px;
+			float: right;
+			border: solid 10px LightSteelBlue;
+			border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+
+
+		}
+	</style>
+	
+</head>
+
+<body >
+
+
+	<div id = pago>
+
+		<legend>EJERCICIOS JAVASCRIPT</legend>
+		
+
+		<fieldset>
+			<button id="idej1" value="Ejercicio1" onclick="crearNuevaVentana('idej1')">Ejercicio 1</button>
+			<button id="idej2" value="Ejercicio2" onclick="crearNuevaVentana('idej2')">Ejercicio 2</button>
+			<button id="idej3" value="Ejercicio3">Ejercicio 3</button>
+		</fieldset>
+
+		<br>
+
+		<fieldset>
+			<button id="idej4" value="Ejercicio4">Ejercicio 4</button>
+			<button id="idej5" value="Ejercicio5">Ejercicio 5</button>
+			<button id="idej6" value="Ejercicio6">Ejercicio 6</button>
+		</fieldset>
+
+	</div>
+	<br>
+	
+</body>
+
+<footer>
+	<script type="text/javascript" src="js/crearVentana.js"></script>
+</footer>
+
+
+</html>

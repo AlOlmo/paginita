@@ -1,0 +1,120 @@
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+	<title>Crear elemento HTML</title>
+	<style>
+		#pago {
+			font-family: Verdana, Arial, sans-serif;
+			margin: auto;
+			background: SlateGray;
+			color: white;
+			font-size: 14px;
+			padding: 30px;
+			width: 450px;
+			border: solid 10px LightSteelBlue;
+			border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+		}
+
+		#pago input {
+			font-size: 14px;
+			background: white;
+			border: solid 1px LightSteelBlue;
+			border-radius: 3px;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			float: right;
+			margin-right: 15px;
+			width: 200px;
+		}
+
+		#pago ol li {
+			line-height: 25px;
+			list-style: none;
+		}
+
+		#pago [required] {
+			border: solid 1px red;
+		}
+
+		input:required {
+			outline: 1px solid red;
+		}
+
+		button {
+			text-align: center;
+		}
+
+		fieldset {
+			text-align: center;
+		}
+
+		#parrafoAyuda {
+
+			font-family: Verdana, Arial, sans-serif;
+			margin: auto;
+			background: SlateGray;
+			color: white;
+			font-size: 14px;
+			padding: 30px;
+			width: 450px;
+			float: right;
+			border: solid 10px LightSteelBlue;
+			border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+
+
+		}
+	</style>
+	<script type="text/javascript" src="js/crearVentana.js">
+	</script>
+</head>
+
+<body >
+
+
+	<div id="pago">
+
+		<legend>Datos personales</legend>
+		<ol>
+			<li>
+				<label for="nombre">Nombre</label>
+				<input id="nombre" name="nombre" type="text" placeholder="Escribe tu nombre completo" required
+					autofocus>
+			</li>
+
+			<li>
+				<label for="apellido">Apellido</label>
+				<input id="apellido" name="apellido" type="text">
+			</li>
+			<li>
+				<label for="domicilio">Domicilio</label>
+				<input id="domicilio" name="domicilio" type="text">
+			</li>
+
+
+
+		</ol>
+
+		<fieldset>
+			<button id="idEnviar" value="Enviar">Enviar</button>
+			<button id="idBorrar" value="Borrar"> Borrar</button>
+			<button id="idAyuda" value="Ayuda"> Ayuda</button>
+		</fieldset>
+
+		<br>
+
+	</div>
+	<br>
+	<div id="parrafoAyuda"> Ayuda <br>Este texto sera el correspondiente a la ayuda y aparece cuando el usuario lo
+		solicita
+		<br> <br> <button value=CerrarAyuda id="idCerrarAyuda"> Cerrar Ayuda </button>
+	</div>
+</body>
+
+</html>

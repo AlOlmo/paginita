@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Iniciación DOM 1</title>
+</head>
+
+<body>
+    <form name="formulario">
+        Texto: <input type="text" name="texto" />
+        <input type="button" name="crear" value="Crear">
+    </form>
+</body>
+<script type="text/javascript">
+    function crear() {
+        var texto = document.formulario.texto.value;
+        //console.log(texto);
+        //Creamos la etiqueta
+        var parrafo = document.createElement("p");
+        var nodoTexto = document.createTextNode(texto);
+        var span = document.createElement("span");
+        var nodoTexto2 = document.createTextNode("Prueba");
+        span.appendChild(nodoTexto2);
+        parrafo.appendChild(nodoTexto);
+        document.body.appendChild(parrafo);
+        var devuelto = document.body.replaceChild(span, parrafo);
+        console.log(devuelto);
+    }
+    window.onload = function () {
+        document.formulario.crear.addEventListener("click", crear);
+    }
+</script>
+
+</html>
