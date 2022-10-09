@@ -96,3 +96,11 @@ function ocultar()
 	document.getElementById("parrafoAyuda").style.visibility='hidden';
 		
 }
+
+async function generarFrase() {
+	let url = "https://api.chucknorris.io/jokes/random"
+	let response = await fetch(url);
+	let json = await response.json();
+	let parrafito = document.getElementById("frasechuck");
+	parrafito.innerText=json.value;
+}
